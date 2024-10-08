@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Privacy Reflection</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link your CSS file here -->
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script> <!-- Include PyScript -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #001F3F; /* Dark blue background */
+            color: white; /* White text */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #002D5D; /* Slightly lighter blue for the container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light shadow for depth */
+        }
+        h1 {
+            text-align: center;
+            color: #FFFFFF; /* White for the header */
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+        .reflection-box {
+            border: 2px solid #FFFFFF; /* White border */
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #003366; /* Darker blue for the box */
+            margin-top: 20px;
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+        #reflectionDisplay {
+            white-space: pre-line; /* Ensures line breaks in the narrative are respected */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reflection on Data Privacy and Cybersecurity</h1>
+
+        <div class="reflection-box">
+            <h2>My Reflection:</h2>
+            <div id="reflectionDisplay"></div>
+        </div>
+    </div>
+
+    <py-script>
+        # Your reflection narrative
+        narrative = """
+        I gained a greater understanding of the significance of protecting personal data in the present digital environment by attending the Data Privacy and Cybersecurity event at Perpetual Molino. 
+        A colonel in the Philippine National Police spoke at the event and provided an informed summary of the nation's mounting threats to cybersecurity and data privacy. 
+        His findings highlighted the proactive role that law enforcement agencies play in ensuring that data privacy rules are followed and deterring cybercrime.
+
+        The colonel talked on a number of things, one of which was the importance of securing personal data. 
+        He emphasized that it helps prevent disastrous consequences from data breaches, ensuring data security is crucial for both individuals and companies. 
+        He provided examples from actual business situations where inadequate data protection procedures had grave repercussions for the company.
+
+        The speaker also admitted that putting in place efficient data protection procedures might be difficult for many firms. 
+        His claim that, even if there are standards for data protection, its implementation and the protection of people's rights to privacy require coordinated efforts from a variety of sectors caught my attention.
+
+        The colonel said that the Philippines has become a primary target for cybercriminals neither its local or foreign, when talking about the country's increasing cyberthreats. 
+        He clarified that there has been an increase in ransomware, identity theft, hacking, and cybercrime occurrences in recent years. 
+        He gave details on the actions taken by the Philippine National Police and other law enforcement agencies to combat these threats, including the establishment of specialized teams tasked with investigating and reducing cyber incidents.
+
+        The colonel clarified that while corporations and law enforcement play a critical role in safeguarding data, regular people also need to exercise caution. 
+        He suggested using multi-factor authentication, changing passwords on a regular basis, and being wary of dubious emails or links as effective measures to protect personal data. 
+        This struck a chord with me because it made clear that everyone who uses the internet has a need to protect their personal information, not only businesses and governments.
+
+        He stated that a large number of Filipinos are still ignorant of the dangers that they encounter online, leaving them open to assault. 
+        He advocated for more extensive education initiatives, especially in communities and schools, to provide people the skills they need to safeguard their personal information. 
+        I was motivated to consider my online behaviors and identify places where my cybersecurity procedures needed to be improved by this portion of the discussion.
+        
+        During the event, attendees could win prizes in the "Wheel of Names." Three winners were selected, and each of them received 100 pesos, sadly I was not one of them.
+
+        The colonel provided a comprehensive overview of the cybersecurity and data privacy conditions in the Philippines in his presentation. 
+        It underlined the need for everyone to take personal information security seriously and the ongoing efforts of law enforcement to combat cybercrime. 
+        As a result of this experience, I have a newfound appreciation for the value of cybersecurity and data privacy, which inspires me to take proactive steps to protect my data and advocate for greater community awareness.
+        """
+
+        # Display the narrative in the designated area
+        Element("reflectionDisplay").element.innerHTML = narrative
+    </py-script>
+</body>
+</html>
